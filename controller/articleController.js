@@ -2,8 +2,10 @@ const multer = require("multer");
 const Article = require("../model/article");
 const cloudinary = require('../Utils/cloudinary');
 const sgMail = require('@sendgrid/mail');
+require('dotenv').config();
 
-sgMail.setApiKey('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');
+const sendgridSecretKey = process.env.SENDGRID_SECRETKEY;
+sgMail.setApiKey(sendgridSecretKey );
 
 const mailer = async (mailOptions, action) => {
     try {
