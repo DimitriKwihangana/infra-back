@@ -13,6 +13,9 @@ const userSchema = new Schema(
     phone: {
       type: String,
     },
+    role:{
+      type: String,
+    },
     password: {
       type: String,
     },

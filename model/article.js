@@ -9,6 +9,30 @@ const articleSchema = new mongoose.Schema({
     photo: {
         type: String,
         required: true
+    },
+    district:{
+        type:String,
+        required:true
+    },
+    sector:{
+        type:String,
+        required:true
+    },
+    village:{
+        type:String,
+        required:true
+    },
+    cell:{
+        type:String,
+        required:true
+    },
+    email: {
+        type:String,
+        required:true
+    },
+    priority: {
+        type:String,
+        required:true
     }
 });
 

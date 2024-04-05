@@ -13,4 +13,6 @@ router.get("/articles", articleController.getAllArticles);
 // Get an article by ID
 router.get("/articles/:id", articleController.getArticleById);
 
+router.put("/articles/update/:id", articleController.updateArticleById);
+
 module.exports = router;
