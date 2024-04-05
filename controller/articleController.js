@@ -5,7 +5,8 @@ const sgMail = require('@sendgrid/mail');
 require('dotenv').config();
 
 const sendgridSecretKey = process.env.SENDGRID_SECRETKEY;
-sgMail.setApiKey(sendgridSecretKey );
+sgMail.setApiKey(sendgridSecretKey);
+
 
 const mailer = async (mailOptions, action) => {
     try {
